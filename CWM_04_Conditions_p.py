@@ -77,11 +77,16 @@ for i in numbers:
 correct_password = "python123"
 
 attempts = 3
-while True:
+while attempts > 0:
+
     password = input("Enter your password: ")
+
     if password == correct_password:
         print("Access Granted!")
         break
     else:
+        attempts = attempts - 1
         print("Incorrect Password. Try Again.")
-    
+        print("Attempts left:", attempts)
+    if attempts == 0:
+        print("Account Locked, Try again later.")
