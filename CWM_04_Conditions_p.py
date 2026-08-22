@@ -63,7 +63,7 @@ for i in numbers_3:
 
 #8
 
-numbers = input("Enter numbers separated by space: ").split()
+numbers = input("Enter numbers: ").split()
 for i in numbers:
     if i == 16:
         print("Found 16!")
@@ -90,4 +90,4 @@ while attempts > 0:
         print("Attempts left:", attempts)
     if attempts == 0:
         print("Account Locked, Try again later.")
-    
+
