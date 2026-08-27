@@ -109,7 +109,7 @@ introduce_yourself("Manji", 30, "Pune")  # Calling the function with two paramet
 def make_pizza(size, *toppings): # Using *toppings to accept variable-length arguments
     print(f"Making a {size}-inch pizza with:")
     for topping in toppings:     # Iterating through the toppings tuple and printing each topping
-        print(f"- {topping}")
+        print(f"- {topping}")   
 
 make_pizza(12, "pepperoni")
 make_pizza(16, "mushrooms", "green peppers", "extra cheese")
