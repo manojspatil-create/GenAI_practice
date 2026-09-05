@@ -135,6 +135,33 @@ numbers.remove(2)
 print(numbers)
 
 
+# Creating a set — curly braces, no key:value (that would be a dict!)
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
 
+# Duplicates auto-removed
+nums = [1, 2, 2, 3, 3, 3]
+unique_nums = set(nums)
+print(unique_nums)     # {1, 2, 3}
 
-#
+# union() — all elements from both sets (no duplicates)
+print(a.union(b))      # {1, 2, 3, 4, 5, 6}
+print(a | b)            # same thing, operator style
+
+# intersection() — elements common to both
+print(a.intersection(b))   # {3, 4}
+print(a & b)                # same thing
+
+# difference() — elements in 'a' but NOT in 'b'
+print(a.difference(b))     # {1, 2}
+print(a - b)                 # same thing
+
+# add() / remove()
+a.add(10)
+a.remove(1)
+print(a)    # {2, 3, 4, 10}
+
+# Membership check — very fast (O(1) average), unlike list's O(n)
+print(3 in a)     # True
+
+############################# END ########################################
