@@ -1,4 +1,5 @@
 import json
+import csv
 print()
 ########## File handle ###############
 # 1. open() with context manager
@@ -41,8 +42,12 @@ data = {"name": "Manoj", "age": 29, "role": "GenAi Engineer"}
 with open("data.json", "w") as f:
     json.dump(data, f)
 
+print()
+print("example 2")
+
 
 # Reading JSON file back into a dict
+print("example 2")
 with open("data.json", "r") as f:
     loaded = json.load(f)
 print(loaded)  # {'name': 'Manoj', 'role': 'GenAI Engineer'} 
@@ -59,5 +64,10 @@ with open("user.json", "r") as f:
     print(access)
 
 
+
 ########## read CSV files ###############
 
+with open("Detailed_Calculation.csv", "r") as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
