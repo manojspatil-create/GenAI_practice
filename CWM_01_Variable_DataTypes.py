@@ -8,11 +8,11 @@ name = "Manoj"
 
 # 2. INTEGER (int)
 # Used to store whole numbers
-age = 29
+score = 85
 
 # 3. FLOAT (float)
 # Used to store decimal numbers
-height = 5.11
+temperature = 21.5
 
 # 4. BOOLEAN (bool)
 # Can have only two values: True or False
@@ -24,8 +24,8 @@ is_learning_python = True
 # ==========================================
 print()
 print(name)
-print(age)
-print(height)
+print(score)
+print(temperature)
 print(is_learning_python)
 
 
@@ -34,8 +34,8 @@ print(is_learning_python)
 # ==========================================
 print()
 print(type(name))               # str
-print(type(age))                # int
-print(type(height))             # float
+print(type(score))              # int
+print(type(temperature))        # float
 print(type(is_learning_python)) # bool
 
 
@@ -46,8 +46,8 @@ print(type(is_learning_python)) # bool
 # directly inside a string using { }
 print()
 print(f"My name is {name}.")
-print(f"I am {age} years old.")
-print(f"My height is {height} feet.")
+print(f"My practice score is {score}.")
+print(f"The room temperature is {temperature} C.")
 print(f"Am I learning Python? {is_learning_python}")
 
 
@@ -57,9 +57,9 @@ print(f"Am I learning Python? {is_learning_python}")
 
 # Python can perform calculations inside { }
 
-next_year_age = age + 1
+next_score = score + 1
 print()
-print(f"Next year I will be {next_year_age} years old.")
+print(f"After one more exercise my score will be {next_score}.")
 
 
 # ==========================================
@@ -67,8 +67,8 @@ print(f"Next year I will be {next_year_age} years old.")
 # ==========================================
 print()
 print(
-    f"My name is {name}, I am {age} years old, "
-    f"my height is {height} feet, "
+    f"My name is {name}, my practice score is {score}, "
+    f"the temperature is {temperature} C, "
     f"and I am learning Python: {is_learning_python}."
 )
 

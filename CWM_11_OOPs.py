@@ -6,50 +6,49 @@ p = person()
 print(p)
 
 
-## constructor method 
+## constructor method
 print()
 class person:
-    def __init__(self, name, age):
+    def __init__(self, name, language):
         self.name = name
-        self.age = age
+        self.language = language
 
-p = person("Manoj", 29)         #same constructor name as class name
+p = person("Manoj", "Python")         # same constructor name as class name
 print(p.name)
-print(p.age)
-
+print(p.language)
 
 
 
 print()
 class employee:
-    def __init__(self, name, location):
+    def __init__(self, name, role):
         self.name = name
-        self.location = location
+        self.role = role
 
-a = employee("Manoj", "Pune")
-b = employee("Manji", "Pune")
-c = employee("Dnyani", "Pune")
-d = employee("Raj", "Indore")
-e = employee("Tejas", "Pune")
-f = employee("Manish", "Pune")
+a = employee("Manoj", "learner")
+b = employee("Alice", "developer")
+c = employee("Bob", "tester")
+d = employee("Carol", "developer")
+e = employee("Dave", "learner")
+f = employee("Eve", "developer")
 
 print(a.name)
-print(a.location)
+print(a.role)
 
 print(b.name)
-print(b.location)
+print(b.role)
 
 print(c.name)
-print(c.location)
+print(c.role)
 
 print(d.name)
-print(d.location)
+print(d.role)
 
 print(e.name)
-print(e.location)
+print(e.role)
 
 print(f.name)
-print(f.location)
+print(f.role)
 
 
 
@@ -63,6 +62,4 @@ class person:
         print(f"Hello, I am {self.name}!")
 
 p = person("Manoj")
-p.greet() #Hello, I am Manoj!        
-
-
+p.greet() #Hello, I am Manoj!

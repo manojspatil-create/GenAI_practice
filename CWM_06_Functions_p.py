@@ -6,8 +6,8 @@
 def greet(name):
     print(f"Hello, {name}, Welcome to Python.")
 greet("Manoj")  # Calling the function with an argument
-greet("Manji")  # Calling the function with a different argument
-greet("Bhau")  # Calling the function with an argument
+greet("Alice")  # Calling the function with a different argument
+greet("Bob")  # Calling the function with an argument
 
 # ============================================================================================================
 
@@ -29,22 +29,22 @@ print(f"Sum: {calculate_result[0]}, Difference: {calculate_result[1]}, Product: 
 
 # 3. Default Argument ⭐
 # Create a function:
-# introduce(name="Guest", city="Unknown")
+# introduce(name="Guest", language="Unknown")
 # It should print:
-# My name is Guest and I live in Unknown.
+# My name is Guest and I am learning Unknown.
 # Test these:
 # introduce()
 # introduce("Manoj")
-# introduce("Manoj", "Pune")
+# introduce("Manoj", "Python")
 # Observe what happens in each case.
 
 print()  # Adding a blank line for better readability
-def introduce(name="Guest", city="Unknown"):
-    print(f"My name is {name} and I live in {city}.")
+def introduce(name="Guest", language="Unknown"):
+    print(f"My name is {name} and I am learning {language}.")
 
 introduce()  # Calling the function without any arguments, will use default values
 introduce("Manoj")  # Calling the function with one argument, will use default value
-introduce("Manoj", "Pune")  # Calling the function with both arguments
+introduce("Manoj", "Python")  # Calling the function with both arguments
 
 # ============================================================================================================
 

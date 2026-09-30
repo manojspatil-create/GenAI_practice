@@ -1,21 +1,19 @@
-#Problem 1 — Personal Profile ⭐ =====================================================
+#Problem 1 — Learner Profile ⭐ =====================================================
 #Create variables for:
 #Your name
-#Your age
-#Your height
+#Your practice score
 #Whether you are learning Python (True/False)
 #Then print one sentence using an f-string:
-#My name is ____, I am ____ years old, my height is ____ feet, and I am learning Python: ____.
+#My name is ____, my practice score is ____, and I am learning Python: ____.
 
 
 name = "Manoj"
-age = 29
-height = 6
+score = 85
 is_learning_python = True
 
 print()
-print("#Problem 1 — Personal Profile ⭐ =====================================================")
-print(f"My name is {name}, I am {age} years old, and my height is {height} feet."
+print("#Problem 1 — Learner Profile ⭐ =====================================================")
+print(f"My name is {name}, my practice score is {score}."
       f" I am learning Python: {is_learning_python}.")
 
 
@@ -44,25 +42,21 @@ print("#Problem 2 — Shopping 🛒 ============================================
 print(f"I bought {quantity} Laptop(s). Total price is {total}. Available: {is_available}")
 
 
-# Problem 3 — Next Year 🎂 ============================================================
+# Problem 3 — Next Score 🎂 ============================================================
 # Create:
 # name = "Manoj"
-# age = 29
-# Print:
-# print(f”Hello Manoj, you are currently {age} years old.”,
-# f”Next year you will be {next_year} years old.”)
-
-# Condition: Calculate the next year's age using Python. Don't manually write 30.
+# score = 85
+# Print a greeting and the next score using Python (do not hard-code 86).
 
 print()
 name_a = "Manoj"
-age_a = 29
+score_a = 85
 
-next_year = age_a + 1
+next_score = score_a + 1
 
-print("#Problem 3 — Next Year 🎂 ============================================================")
-print(f"Hello {name_a}, you are currently {age_a} years old, " 
-      f"Next year you will be {next_year} years old.")
+print("#Problem 3 — Next Score 🎂 ============================================================")
+print(f"Hello {name_a}, your current practice score is {score_a}, "
+      f"Next exercise your score will be {next_score}.")
 
 
 # Problem 4 — Data Type Detective 🔍
@@ -100,19 +94,18 @@ print(f"{d} → {type(d).__name__}")
 
 
 name = "Manoj"
-experience = 4.4
-salary = 50000
+modules_completed = 5
 learning_ai = True
 
 print()
-print("#Problem 5 — Employee Profile 🧑‍💼 =====================================================")
-print(f"My name is {name}, I have {experience} years of experience and my salary is {salary}. I am Learning AI: {learning_ai} ")
+print("#Problem 5 — Learner Profile 🧑‍💼 =====================================================")
+print(f"My name is {name}, I have completed {modules_completed} modules. I am Learning AI: {learning_ai} ")
 
-next_year_experience = experience + 1
-print(f"Next year I will have {next_year_experience} years of experience.")
+next_modules = modules_completed + 1
+print(f"After the next lesson I will have completed {next_modules} modules.")
 
 print()
-person = {"name": "Manoj", "age": 28}   # dict — key-value pairs
+person = {"name": "Manoj", "role": "learner"}   # dict — key-value pairs
 print(person)
 
 

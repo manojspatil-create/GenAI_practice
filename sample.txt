@@ -1,0 +1,2 @@
+Hello from the LearnPython file-handling example.
+This file lives in the repository.

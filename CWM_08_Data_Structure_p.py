@@ -1,10 +1,10 @@
 #1
 
 users = [
-    {"id": 101, "name": "Rahul", "role": "developer", "skills": ["Python", "SQL"]},
-    {"id": 102, "name": "Priya", "role": "developer", "skills": ["Python", "AWS"]},
-    {"id": 103, "name": "Amit", "role": "tester", "skills": ["Python", "SQL"]},
-    {"id": 104, "name": "Sneha", "role": "developer", "skills": ["Java", "SQL"]},
+    {"id": 101, "name": "Alice", "role": "developer", "skills": ["Python", "SQL"]},
+    {"id": 102, "name": "Bob", "role": "developer", "skills": ["Python", "AWS"]},
+    {"id": 103, "name": "Carol", "role": "tester", "skills": ["Python", "SQL"]},
+    {"id": 104, "name": "Dave", "role": "developer", "skills": ["Java", "SQL"]},
 ]
 
 """

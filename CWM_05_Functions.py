@@ -15,8 +15,8 @@ def say_hi(name):
     print(f"Hello, {name}!")
     print("Welcome to Python Functions")
 
-say_hi("MAnoj")  # Calling the function with a parameter
-say_hi("Manji")    # Calling the function with a different parameter  
+say_hi("Manoj")  # Calling the function with a parameter
+say_hi("Alice")    # Calling the function with a different parameter  
 
 
 #3. Function with Return Value ============================================================================================================
@@ -36,10 +36,10 @@ def multiply_numbers(a, b):
 	print(a * b)
 multiply_numbers(3, 6)
 
-def introduce_yourself(name, age, location):  # Function with multiple parameters
-    print(f"My name is {name} and I am {age} years old. and i live in {location}.")
-introduce_yourself("Manoj", 25, "Pune")  # Calling the function with two parameters
-introduce_yourself("Manji", 30, "Pune")  # Calling the function with
+def introduce_yourself(name, language, topic):  # Function with multiple parameters
+    print(f"My name is {name}. I am learning {language} and the topic is {topic}.")
+introduce_yourself("Manoj", "Python", "functions")  # Calling the function with three parameters
+introduce_yourself("Alice", "Python", "loops")  # Calling the function with three parameters
 
 
 #5 Default Parameters ============================================================================================================
@@ -50,9 +50,9 @@ greet()  # Calling the function without any argument, will use the default value
 
 #6. Keyword Arguments ============================================================================================================
 print()  # Adding a blank line for better readability
-def introduce_yourself(name, age, location):
-     print(f"My name is {name} and I am {age} years old. and i live in {location}.")
-introduce_yourself(age=25, location="Pune", name="Manoj")  # Calling the function with keyword arguments
+def introduce_yourself(name, language, topic):
+     print(f"My name is {name}. I am learning {language} and the topic is {topic}.")
+introduce_yourself(language="Python", topic="functions", name="Manoj")  # Calling the function with keyword arguments
 
 #7. Local Variables ============================================================================================================
 
@@ -100,10 +100,10 @@ show(1, 2, 3)
 
 
 def introduce_yourself(*args): # Using *args to accept variable-length arguments
-     name, age, location = args # Unpacking the arguments into separate variables
-     print(f"My name is {name}, and i am {age} years old, and i live in{location}.")
-introduce_yourself("Manoj", 25, "Pune")  # Calling the function with two parameters
-introduce_yourself("Manji", 30, "Pune")  # Calling the function with two parameters
+     name, language, topic = args # Unpacking the arguments into separate variables
+     print(f"My name is {name}. I am learning {language} and the topic is {topic}.")
+introduce_yourself("Manoj", "Python", "functions")  # Calling the function with three parameters
+introduce_yourself("Alice", "Python", "loops")  # Calling the function with three parameters
 
 
 def make_pizza(size, *toppings): # Using *toppings to accept variable-length arguments
@@ -120,8 +120,8 @@ print()  # Adding a blank line for better readability
 def introduce_yourself(**kwargs): # Using **kwargs to accept variable-length keyword arguments
     for key, value in kwargs.items(): # Iterating through the key-value pairs in the kwargs dictionary
         print(f"{key}: {value}")
-introduce_yourself(name="Manoj", age=25, location="Pune")  # Calling the function with keyword arguments
-introduce_yourself(name="Manji", age=30, location="Pune")  # Calling the function with keyword arguments
+introduce_yourself(name="Manoj", language="Python", topic="functions")  # Calling the function with keyword arguments
+introduce_yourself(name="Alice", language="Python", topic="loops")  # Calling the function with keyword arguments
 
 #11 Using *args and **kwargs Together
 
@@ -130,6 +130,6 @@ print()
 def test(*args, **kwargs):
     print(args)
     print(kwargs)
-test(10,20,30, name="Manoj", age=29)
+test(10,20,30, name="Manoj", language="Python")
 
 ############################# END ########################################

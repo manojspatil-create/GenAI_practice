@@ -39,7 +39,7 @@ print("2: Tuples — Ordered, Immutable ==================")
 coordinates = (10, 20 , 10, 30)
 print(coordinates)
 
-person = ("Manoj", 29, "India")
+person = ("Manoj", "Python", "learner")
 print(person)
 print(person[2])
 
@@ -56,10 +56,10 @@ print(point[0])       # 10
 
 # Use case 1: Tuple as a dictionary key
 locations = {
-    (19.99, 73.78): "Nashik",
-    (28.61, 77.20): "Delhi"
+    (0.0, 0.0): "Origin",
+    (1.0, 1.0): "Sample Point"
 }
-print(locations[(19.99, 73.78)])   # Nashik
+print(locations[(0.0, 0.0)])   # Origin
 
 # Use case 2: Returning multiple values from a function
 def get_min_max(numbers):
@@ -77,18 +77,18 @@ print(type(not_a_tuple))  # <class 'int'>
 # Dictionaries =================================================================
 print()
 print("3: Dicts — Key-Value Store =========================")
-person = {"name":"Manoj", "age": 29, "Location":"Pune"}
+person = {"name":"Manoj", "role": "learner", "language":"Python"}
 print(person)
 
 
 # Access values
 # You access the value using its key:
 print(person["name"])
-person["name"] = "Manji"
+person["name"] = "Alice"
 print(person)
 
 # Creating a dict
-person = {"name": "Manoj", "age": 30, "role": "learner"}
+person = {"name": "Manoj", "level": "beginner", "role": "learner"}
 
 # Accessing values
 print(person["name"])         # Manoj
@@ -99,24 +99,24 @@ print(person.get("email", "N/A"))     # N/A (default value if missing)
 # print(person["email"])              # This would raise KeyError!
 
 # update() — add new key OR modify existing key
-person.update({"age": 31, "city": "Nashik"})
-print(person)   # {'name': 'Manoj', 'age': 31, 'role': 'learner', 'city': 'Nashik'}
+person.update({"level": "practice", "topic": "dictionaries"})
+print(person)   # {'name': 'Manoj', 'level': 'practice', 'role': 'learner', 'topic': 'dictionaries'}
 
 # Adding a single key directly
-person["email"] = "manoj@example.com"
+person["email"] = "learner@example.com"
 
 # .keys(), .values(), .items()
-print(person.keys())     # dict_keys(['name', 'age', 'role', 'city', 'email'])
-print(person.values())   # dict_values(['Manoj', 31, 'learner', 'Nashik', 'manoj@example.com'])
+print(person.keys())     # dict_keys(['name', 'level', 'role', 'topic', 'email'])
+print(person.values())   # dict_values(['Manoj', 'practice', 'learner', 'dictionaries', 'learner@example.com'])
 
 # .items() — most commonly used for looping through a dict
 for key, value in person.items():
     print(f"{key}: {value}")
 # name: Manoj
-# age: 31
+# level: practice
 # role: learner
-# city: Nashik
-# email: manoj@example.com
+# topic: dictionaries
+# email: learner@example.com
 
 
 # Sets ========================================================================
