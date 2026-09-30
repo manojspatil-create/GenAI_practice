@@ -65,9 +65,26 @@ with open("user.json", "r") as f:
 
 
 
-########## read CSV files ###############
+# ########## read CSV files ###############
 
-with open("Detailed_Calculation.csv", "r") as f:
-    reader = csv.reader(f)
-    for row in reader:
-        print(row)
+# with open("Detailed_Calculation.csv", "r") as f:
+#     reader = csv.reader(f)
+#     for row in reader:
+#         print(row)
+
+
+
+# LLMS
+print()
+
+dictionary_text = json.dumps(user)
+
+
+words = len(dictionary_text.split())
+approx_tokens = int(words/ 0.75)
+print(f"Words: {words}, Approx tokens: {approx_tokens}") 
+
+
+words = len(user["name"].split())
+approx_tokens = int(words/ 0.75)
+print(f"Words: {words}, Approx tokens: {approx_tokens}") 
